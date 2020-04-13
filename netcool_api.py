@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from model_pred import doc_path
 from flasgger import Swagger
 
-UPLOAD_FOLDER = "C:\\Users\\Karthi\\Desktop\\api\\upload"
+UPLOAD_FOLDER = "demo290/netcooldemo/upload"
 
 app = Flask(__name__)
 swagger = Swagger(app)
@@ -21,7 +21,7 @@ def upload():
     file_path = doc.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
     # calling function for prediction
-    result = doc_path(UPLOAD_FOLDER+'\\'+filename)
+    result = doc_path(UPLOAD_FOLDER+'/'+filename)
     # print(result)
     return result
 
