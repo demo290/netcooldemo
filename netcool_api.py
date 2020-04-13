@@ -13,7 +13,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def index():
     return render_template('flask.html')
 
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methods=['GET','POST'])
 def upload():
     doc = request.files['myFile']
     filename = secure_filename(doc.filename)
