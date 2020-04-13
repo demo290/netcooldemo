@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from model_pred import doc_path
 
 
-UPLOAD_FOLDER = "netcooldemo/upload"
+UPLOAD_FOLDER = "upload"
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
