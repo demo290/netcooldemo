@@ -2,12 +2,11 @@ import os
 from flask import Flask, redirect , url_for, render_template , request, jsonify
 from werkzeug.utils import secure_filename
 from model_pred import doc_path
-from flasgger import Swagger
+
 
 UPLOAD_FOLDER = "demo290/netcooldemo/upload"
 
 app = Flask(__name__)
-swagger = Swagger(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
