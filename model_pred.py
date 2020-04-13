@@ -127,7 +127,7 @@ def doc_path(file_name):
 
 
     ## Load model
-    Pkl_Filename =  "C:\\Users\\Karthi\\Desktop\\api\\VotingClassifier_NetcoolAlarms_subset.pkl"
+    Pkl_Filename =  "demo290/netcooldemo/VotingClassifier_NetcoolAlarms_subset.pkl"
     with open(Pkl_Filename, 'rb') as file:  
         votingclassifier = pickle.load(file)
     
