@@ -1,0 +1,1 @@
+web: gunicorn netcool_api:app
