@@ -1,5 +1,5 @@
 import os
-from flask import Flask, redirect , url_for, render_template , request, jsonify
+from flask import Flask, redirect , url_for, render_template , request, jsonify, send_file
 from werkzeug.utils import secure_filename
 from model_pred import doc_path
 
@@ -25,7 +25,7 @@ def upload():
     return result
 @app.route('/download', methods=['GET','POST'])
 def download():
-    return send_file("output.xl
+    return send_file('output.xlsx', as_attachment=True)
     
 if __name__ == '__main__':
     app.run(debug=True)
