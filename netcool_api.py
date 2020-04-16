@@ -23,7 +23,9 @@ def upload():
     result = doc_path(UPLOAD_FOLDER+'/'+filename)
     # print(result)
     return result
-
+@app.route('/download', methods=['GET','POST'])
+def download():
+    return send_file("output.xl
     
 if __name__ == '__main__':
     app.run(debug=True)
