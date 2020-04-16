@@ -161,7 +161,7 @@ def doc_path(file_name):
             a_df['duplicated'][i] = "Yes"
         else:
             a_df['duplicated'][i] = "No"
-    t_df.to_excel('output.xlsx', index = False)
+    t_df.to_csv('output.csv', index = False)
     ##Status segment
     # csvfile = open('status.csv', 'r')
     # reader = csv.DictReader( csvfile )
