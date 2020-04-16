@@ -25,7 +25,7 @@ def upload():
     return result
 @app.route('/download', methods=['GET','POST'])
 def download():
-    return send_file('output.xlsx', as_attachment=True)
+    return send_file('output.csv', as_attachment=True)
     
 if __name__ == '__main__':
     app.run(debug=True)
